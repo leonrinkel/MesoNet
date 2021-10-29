@@ -294,7 +294,7 @@ def compute_accuracy(classifier, dirname, frame_subsample_count = 30):
     '''
     Extraction + Prediction over a video
     '''
-    filenames = [f for f in listdir(dirname) if isfile(join(dirname, f)) and ((f[-4:] == '.mp4') or (f[-4:] == '.avi') or (f[-4:] == '.mov'))]
+    filenames = [f for f in listdir(dirname) if isfile(join(dirname, f)) and ((f[-4:].lower() == '.mp4') or (f[-4:].lower() == '.avi') or (f[-4:].lower() == '.mov'))]
     predictions = {}
     
     for vid in filenames:
