@@ -6,7 +6,7 @@ docker run \
   -v `pwd`/test_images:/app/test_images \
   -v `pwd`/test_videos:/app/test_videos \
   leonrinkel/mesonet \
-  python3.5 example.py
+  python3 example.py
 ```
 
 ---
