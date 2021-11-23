@@ -2,11 +2,11 @@
 
 ```
 docker run \
-  --rm -it \
+  --rm -it --gpus all \
   -v `pwd`/test_images:/app/test_images \
   -v `pwd`/test_videos:/app/test_videos \
   leonrinkel/mesonet \
-  python3 example.py
+  python example.py
 ```
 
 ---
